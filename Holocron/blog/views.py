@@ -9,4 +9,4 @@ def home(request):
 
 def blog_details(request, blog_id):
     blogs = get_object_or_404(blogContent, pk=blog_id)
-    return render(request , 'blog/blog_details.html',{'blogs': blogs} ) 
+    return render(request , 'blog/blog_details.html',{'blogs': blogs}) 
