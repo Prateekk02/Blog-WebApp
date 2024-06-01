@@ -42,10 +42,23 @@ module.exports = {
         // '../../**/*.py'
     ],
     theme: {
+        color:{
+            transparent: 'transparent',
+            olive:{
+                50:'#ced2c4',
+                100:'#9fc0a9',
+                200:'#a3ab94',
+                400:'#607e79',
+            },
+            skin:{
+                50:'#fbf3f0',
+                100:'#f7e1d4',
+                200:'#f6d1be',
+                400:'#f4bd9f',
+            },
+        },
         extend: {
-            fontFamily:{
-                starWars:['"News Gothic","sans-serif"'],
-            }
+            
         },
     },
     plugins: [
