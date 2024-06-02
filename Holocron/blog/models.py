@@ -8,6 +8,9 @@ class blogContent(models.Model):
     author = models.CharField(max_length=100)
     time = models.DateTimeField(default=timezone.now)
     thumbnail = models.ImageField(upload_to='blog_thumbnails/')
+    like = models.IntegerField(default=0)
+    report = models.IntegerField(default=0)
+    comment = models.TextField(default='')
     
     def __str__(self) :
         return self.title
