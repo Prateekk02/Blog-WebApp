@@ -1,0 +1,21 @@
+{% extends "Holocron/layout.html" %}
+{% block title %}Register{% endblock %}
+{% block content %}
+
+    <div class="bg-gradient-to-tr from-violet-500 via-pink-950 to-blue-950  mx-[30%] mt-5 p-4 rounded-xl">
+        
+        <form class='text-white' method='post'>
+            {% csrf_token %}
+            {{form}}
+            <div class="text-center">
+                <style>
+                    input {
+                      color: black; 
+                    }
+                </style>
+                <button type="submit" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Submit</button>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}

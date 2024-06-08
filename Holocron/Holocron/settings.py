@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'blog',
     'tailwind',
     'theme',
-    
+    'register',
     'django_browser_reload',
     
 ]
